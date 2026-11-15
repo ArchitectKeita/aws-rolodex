@@ -5,7 +5,7 @@
 <h1 align="center">aws-rolodex</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Terraform-52_resources-c9ced8?style=for-the-badge&labelColor=0a0b0e" alt="Terraform · 52 resources">
+  <img src="https://img.shields.io/badge/Terraform-60_resources-c9ced8?style=for-the-badge&labelColor=0a0b0e" alt="Terraform · 60 resources">
   <img src="https://img.shields.io/badge/ECS-Fargate-c9ced8?style=for-the-badge&labelColor=0a0b0e" alt="ECS Fargate">
   <img src="https://img.shields.io/badge/NAT_gateways-0-c9ced8?style=for-the-badge&labelColor=0a0b0e" alt="Zero NAT gateways">
   <img src="https://img.shields.io/badge/Tests-15_passing-c9ced8?style=for-the-badge&labelColor=0a0b0e" alt="15 tests passing">
@@ -24,9 +24,9 @@ splitting your traffic. Hit **kill** and the container that answers dies on the
 spot. Watch it go red, watch the load balancer route around it, and watch ECS
 launch a replacement — while the app never goes down.
 
-<img src="screenshots/preview-kill.png" alt="The Rolodex with the under-the-hood panel: one container killed in us-east-1b, the other still serving" width="100%">
+<img src="screenshots/live.png" alt="The live Rolodex on AWS: contacts on the left; the network map with four containers across us-east-1a and us-east-1b mid rolling deploy, the one serving the request highlighted" width="100%">
 
-<sub>Preview build with a simulated backend. One container was just killed; the other kept serving.</sub>
+<sub>Live on AWS, caught mid rolling deploy: the new pair of containers is up and healthy before the old pair drains.</sub>
 
 <br>
 
